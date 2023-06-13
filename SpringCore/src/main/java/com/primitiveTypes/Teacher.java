@@ -1,4 +1,4 @@
-package com.springcore;
+package com.primitiveTypes;
 
 public class Teacher {
      private String teacherName;

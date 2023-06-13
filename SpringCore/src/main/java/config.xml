@@ -12,29 +12,19 @@
          http://www.springframework.org/schema/tx/spring-tx.xsd ">
          
          <bean  class="com.springcore.Student" name="student1">
-         <property name="studentId">
-         <value> 7775 </value>
-         </property>
-         
-         <property name="studentName">
-         <value>Dipak</value>
-         </property>
-         
-         <property name="studentAddress">
-         <value> Pune </value>
-         </property>
+         <property name="studentId" value="777" />
+         <property name="studentName" value="Dipak" />
+         <property name="studentAddress" value="Pune" />
          </bean>
-         
+         <bean class="com.springcore.Student" name="student2"
+          p:studentId="888" p:studentName="DVP" p:studentAddress="Jalna" />
+                   
          <bean class="com.springcore.Teacher" name="teacher1">
-         <property name="teacherName">
-         <value>Shete Madem</value>
-         </property>
+         <property name="teacherName" value="Shete Madam" />
          </bean>
          
          <bean class="com.springcore.Teacher" name="teacher2">
-         <property name="teacherName">
-         <value>Bandal sir</value>
-         </property>
+         <property name="teacherName" value="Bandal sir" />
          </bean>
         
 	
