@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+         http://www.springframework.org/schema/tx/spring-tx.xsd ">
+         
+         <bean  class="com.collectionTypes.Employee" name="employee1">
+         <property name="employeeId" value="777" />
+         
+         <property name="employeeNames">
+          <list>
+         <value>DipakPadol</value>
+         <value>ArunDada</value>
+         <value>JaydeepJadhav</value>
+         </list> </property>
+         
+         <property name="employeeAddresses">
+         <set>
+         <value>Delhi</value>
+         <value>Pune</value>
+         <value>Mumbai</value>
+         </set></property>
+         
+         <property name="Courses">
+         <map>
+         <entry key="java" value="Six-Month"/>
+         <entry key="python" value="Seven-Month" />
+         <entry key="dot net" value="Ten-Month" />
+         </map></property>
+         </bean>
+         
+         <bean  class="com.collectionTypes.Employee" name="employee2">
+         <property name="employeeId" value="888" />
+         
+         <property name="employeeNames">
+          <list>
+         <value>DVPpatil</value>
+         <value>KeshavAnna</value>
+         <value>GajuAnna</value>
+         </list> </property>
+         
+         <property name="employeeAddresses">
+         <set>
+         <value>Pune</value>
+         <value>Jalna</value>
+         <value>Jalna</value>
+         </set></property>
+         
+         <property name="Courses">
+         <map>
+         <entry key="Engineering" value="Four-Year"/>
+         <entry key="Msf" value="Seven-Month" />
+         <entry key="farming" value="Ten-Month" />
+         </map></property>
+         </bean>
+</beans>
