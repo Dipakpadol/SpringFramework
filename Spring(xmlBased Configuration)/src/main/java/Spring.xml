@@ -11,22 +11,17 @@
         http://www.springframework.org/schema/tx
          http://www.springframework.org/schema/tx/spring-tx.xsd ">
          
-         <bean  class="com.primitiveTypes.Student" name="student1">
-         <property name="studentId" value="777" />
-         <property name="studentName" value="Dipak" />
-         <property name="studentAddress" value="Pune" />
-         </bean>
-         <bean class="com.primitiveTypes.Student" name="student2"
-          p:studentId="888" p:studentName="DVP" p:studentAddress="Jalna" />
-                   
-         <bean class="com.primitiveTypes.Teacher" name="teacher1">
-         <property name="teacherName" value="Shete Madam" />
-         </bean>
+         <bean name="Bike" class="com.spring.Bike"></bean>
+         <bean name="Car" class="com.spring.Car"></bean>
          
-         <bean class="com.primitiveTypes.Teacher" name="teacher2">
-         <property name="teacherName" value="Bandal sir" />
-         </bean>
+        <bean id="Tyre" class="com.spring.Tyre">
+         <property name="tyreSize" value="For 4 Wheeler Use"></property> 
+          <property name="tyreBrand" value="MRF Tyre"></property> 
+        </bean> 
         
-	
-
+        <bean id="Window" class="com.spring.Windows">
+        <constructor-arg value="Light-Black"></constructor-arg>
+        <constructor-arg value="Don't know"></constructor-arg>
+        </bean>
+              
 </beans>
