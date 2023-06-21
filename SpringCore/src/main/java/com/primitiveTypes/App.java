@@ -8,6 +8,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		System.out.println("Hello World ! I am coming with fully power and strength");
+		
          ApplicationContext context=new ClassPathXmlApplicationContext("config.xml");
          
          Student student1=(Student)context.getBean("student1");
